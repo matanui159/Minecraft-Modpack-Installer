@@ -166,8 +166,7 @@ public class ModpackInstaller implements Runnable {
 					"<html>A Modpack with the same name already exists.<br>"
 					+ "Would you like to Overwrite it?</html>",
 					frame.getTitle(), JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
-				IOUtil.deleteFile(new File(minecraft, "modpacks/" + name));
-				IOUtil.deleteFile(new File(minecraft, "versions/" + name));
+				IOUtil.deleteFile(new File(minecraft, "modpacks/" + name + "/mods"));
 			} else {
 				IOUtil.deleteFile(temp);
 				System.exit(0);
@@ -178,8 +177,6 @@ public class ModpackInstaller implements Runnable {
 		try {
 			install(minecraft, temp, name, files);
 		} catch (Exception ex) {
-			IOUtil.deleteFile(new File(minecraft, "modpacks/" + name));
-			IOUtil.deleteFile(new File(minecraft, "versions/" + name));
 			ex.printStackTrace();
 			Logger.error("Could not install the Modpack.");
 		} finally {
@@ -206,8 +203,6 @@ public class ModpackInstaller implements Runnable {
 			writer.println(gson.toJson(json));
 			writer.close();
 		} catch (Exception ex) {
-			IOUtil.deleteFile(new File(minecraft, "modpacks/" + name));
-			IOUtil.deleteFile(new File(minecraft, "versions/" + name));
 			ex.printStackTrace();
 			Logger.error("Could not add profile.");
 		}
