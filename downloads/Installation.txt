@@ -1,0 +1,16 @@
+Installation
+============
+1. Extract the zip and move the "New Modpack" folder into the "versions" folder of your minecraft directory.
+2. Open Minecraft and create a profile with the following options:
+	- Set "Profile Name" to "New Modpack"
+	- Make sure everything is unticked except for "Launcher Visibility"
+	- Set "Launcher Visibility" to "Keep the launcher open"
+	- Set "Use Version" to "New Modpack"
+3. Click "Save Profile" and enjoy!
+
+Usage
+=====
+1. Set "Profile" to "New Modpack"
+2. Click "Play"
+3. After the file chooser opens, select the downloaded modpack (whatever it may be)
+4. After it finishes installing, restart Minecraft and enjoy your new modpack!
