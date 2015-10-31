@@ -1,0 +1,11 @@
+{
+	"id": "New Modpack",
+	"time": "0000-00-00T00:00:00+00:00",
+	"releaseTime": "0000-00-00T00:00:00+00:00",
+	"type": "release",
+	"minecraftArguments": "",
+	"libraries": [],
+	"mainClass": "com.redmintie.minecraft.modpackinstaller.ModpackInstaller",
+	"minimumLauncherVersion": 14,
+	"assets": "1.8"
+}
